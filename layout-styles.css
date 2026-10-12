@@ -1,0 +1,182 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Icon Imports */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+
+
+/* Layout Styles */
+
+body {
+    background-color: black;
+    
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    
+    background-color: black;
+
+    /* align-items: center; */
+
+    height: 100dvh;
+
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box; /* Forces recalculation of height to account for padding */
+}
+
+.hstack {
+    display: flex;
+}
+
+.hstack.space {
+    gap: 30px;
+}
+
+.header > .hstack {
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 40px;
+}
+
+.isolate {
+    background-color: hsl(120, 55%, 77%);
+
+    margin: 10px;
+    padding-inline: 40px;
+    border-radius: 10px;
+}
+
+.isolate p, .isolate h2 {
+    color: black;
+}
+
+.link-pair {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Conditional Layout Styles */
+
+@media screen and (max-width: 800px) {
+    .header > .hstack {
+        flex-direction: column;
+        align-items: left;
+
+        gap: 10px;
+    }
+
+    .hstack {
+        flex-direction: column;
+    }
+}
+
+
+/* Text Styles */
+
+h1, h2, h3, h4 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+    color: white;
+}
+
+h2, h3, h4 {
+    margin-block: 10px;
+}
+
+p, a, td {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: light;
+
+    color: white;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 30pt;
+    
+    color: white;
+}
+
+.header p {
+    color: hsl(0, 0%, 95%);
+}
+
+.header a {
+    /* display: flex;
+    align-items: center; */
+    
+    text-decoration: none;
+    
+    color: hsl(120, 33%, 50%);
+}
+
+.isolate a {
+    /* display: flex;
+    align-items: center; */
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.text-icon {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+}
+
+.text-icon .material-symbols-rounded {
+    font-size: larger;
+}
+
+/* .hstack > a {
+    margin: 5px;
+    padding: 5px;
+
+    background-color: lightgray;
+} */
+
+
+/* Table Styles */
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    color: hsl(0, 0%, 75%);
+    padding: 10px;
+    font-weight: 300;
+}
+
+.highlight td {
+    font-weight: 400;
+    color: hsl(0, 0%, 95%);
+}
+
+td {
+    border-bottom: 1px solid hsl(0, 0%, 25%);
+}
+
+tr:last-child td { /* Last row of each table */
+    border-bottom: none;
+}
+
