@@ -13,6 +13,8 @@ body {
     
     margin: 0;
     padding: 0;
+
+    overflow-x: clip; /* Prevents wider elements from creating horizontal scroll */
 }
 
 section {
