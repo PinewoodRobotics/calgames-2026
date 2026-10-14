@@ -5,6 +5,11 @@
   <title>4765 at Calgames</title>
 
   <link rel="stylesheet" href="layout-styles.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +20,18 @@
     <div class="hstack">
       <h1>Join Us At Calgames 2026!</h1>
     </div>
+
+    <!-- <img src="assets/images/robot-cover.png"> -->
+
+    <div class="header-img-container">
+      <img src="assets/images/robot-cover.png">
+    </div>
+
+
     <div class="hstack">
       <div class="link-pair">
         <p>Saturday & Sunday, October 17–18</p>
-        <a href="index.html" class="text-icon">Schedule<span class="material-symbols-rounded">arrow_forward</span></a>
+        <a href="#schedule" class="text-icon">Schedule<span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
 
       <div class="link-pair">
@@ -26,7 +39,7 @@
           <p>Woodside High School<br>199 Churchill Ave<br>Woodside, CA  94062</p>
         </div>
 
-        <a href="index.html" class="text-icon">View Location<span class="material-symbols-rounded">arrow_forward</span></a>
+        <a href="#venue-information" class="text-icon">Venue Information<span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
     </div>
   </section>
@@ -49,12 +62,7 @@
   </section>
 
   <section>
-    <h2>Venue Information</h2>
-  </section>
-
-  <section>
-    <h2>Event Schedule</h2>
-    <h3>Overview</h3>
+    <h2 id="schedule">Event Schedule</h2>
     
     <div class="hstack space">
       <div>
@@ -135,5 +143,17 @@
     </p>
   </section>
   
+  <section>
+    <h2 id="venue-information">Venue Information</h2>
+
+    <p>
+      Refer to the map below for notable locations.
+    </p>
+
+    <div class="img-container">
+      <img src="assets/images/campus-map.png" alt="Map of Woodside High School campus" class="map">
+    </div>
+  </section>
+
 </body>
 </html>

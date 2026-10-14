@@ -25,7 +25,7 @@ section {
     
     justify-content: space-between;
     
-    background-color: black;
+    /* background-color: black; */
 
     /* align-items: center; */
 
@@ -71,10 +71,62 @@ section {
     gap: 10px;
 }
 
+/* Image Styles */
+
+/* .header {
+    background-image: url(assets/images/robot-cover.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.map {
+    width: 100%;
+    max-width: 1100px;
+    min-width: 750px;
+
+    border-radius: 10px;
+}
+
+.img-container {
+    overflow: scroll;
+    scrollbar-width: none;
+
+    border-radius: 10px;
+}
+
+.header-img-container {
+    display: flex;
+    justify-content: center;
+
+    overflow: visible;
+
+    flex: 1;
+    min-height: 0;
+    z-index: -1;
+}
+
+.header img {
+    overflow: visible;
+    object-fit: cover;
+
+    width: 100%;
+    min-width: 750px;
+    max-width: 1250px;
+}
+
 
 /* Conditional Layout Styles */
 
 @media screen and (max-width: 800px) {
+    section {
+        padding: 25px;
+    }
+    
+    .isolate {
+        padding: 20px 15px;
+    }
+
     .header > .hstack {
         flex-direction: column;
         align-items: left;
