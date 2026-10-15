@@ -97,7 +97,8 @@ section {
     display: flex;
     justify-content: center;
 
-    overflow: visible;
+    /* overflow-x: hidden;
+    overflow-y: visible; */
 
     flex: 1;
     min-height: 0;
@@ -106,8 +107,10 @@ section {
 
 .header img {
     position: absolute;
-    overflow: visible;
     object-fit: cover;
+
+    overflow-y: visible;
+    overflow-x: hidden;
 
     width: 100%;
     min-width: 750px;
@@ -126,6 +129,10 @@ section {
         padding: 25px;
     }
     
+    .header {
+        padding-inline: 30px
+    }
+
     .isolate {
         padding: 20px 15px;
     }
