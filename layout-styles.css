@@ -159,11 +159,15 @@ section {
     }
 
     .hstack.space {
-        gap: 10px;
+        gap: 0;
     }
 
     .isolate-partial {
         background-image: none;
+    }
+
+    .link-pair {
+        gap: 0;
     }
 }
 
