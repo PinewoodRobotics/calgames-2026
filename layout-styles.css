@@ -222,6 +222,12 @@ h1 {
     color: hsl(120, 33%, 50%);
 }
 
+a {
+    color: white;
+
+    text-decoration: none;
+}
+
 .isolate a {
     text-decoration: none;
 
